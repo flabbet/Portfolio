@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="topNavController.js"></script>
+    <script src="syntaxHighlighter.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Krzysztof Krysiński - Programista</title>
 </head>
-<body>
+<body onload="colorSyntax();">
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <a href="#aboutMe">About me</a>
@@ -27,7 +28,7 @@
             I am <span style="color: #2E9BFD;">Google Code-In</span> <span style="color: #FCD728;">2018</span> finalist and winner of few local contests.</br></br>
             I love reading books, listening to music and archery.
         </div>
-        <div class="contentBlock">
+        <div class="contentBlock code">       
             class Portfolio</br>
             {</br>
                 var name = "Krzysztof Krysiński";</br>
