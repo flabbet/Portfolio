@@ -6,6 +6,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: snow;
+}
+
 .topnav{
     background-color: #545454;
     overflow: hidden;
@@ -58,6 +63,16 @@ h1{
     font-size: 72px;
 }
 
+.blink{
+  animation: blinker 1.2s infinite step-end;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
 .contentBlock{
     background-color: #383838;
     float:left;
@@ -65,4 +80,11 @@ h1{
     padding: 25px;
     margin-left: 50px;
     margin-top: 15px;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+.contentBlock a{
+  text-decoration: underline;
+  text-decoration-color: #7de67d;
 }
