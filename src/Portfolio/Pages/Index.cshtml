@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>
+    <span style="color: #00FF2A">></span><span id="typeWriteHeader"> Hi, I'm Krzysztof</span><span class="blink">|</span>
+</h1>
+<div class="contentBlock">
+    <div class="card">
+        I've been programming since I was 13. </br></br>
+        My main fields are <span style="color: #A1E727;">desktop</span>, <span style="color: #A1E727;">game</span>
+        and <span style="color: #A1E727;">mobile</span> development. </br></br>
+        I am <span style="color: #A1E727;">Google Code-In</span> <span style="color: #A1E727;">2018</span>
+        finalist,
+        <span style="color: #A1E727;">Google Code-In</span> 2019 Runner up</br>
+        and winner of few local contests.</br></br>
+        I love books, music and archery.
+    </div>
+    <div id="downText">
+        <span>Projects</br></span>
+    </div>
+</div>
+<div class="contentBlock">
+    <div class="card">
+        <pre class="prettyprint">
+class Portfolio
+{
+    var name = "Krzysztof Krysiński";
+    var age = @Model.Age;
+    var nationality = "Polish";
+                        
+    var github = "<a href="https://github.com/flabbet" target="_blank">flabbet</a>";
+    var linkedIn = "<a href="https://www.linkedin.com/in/krzysztof-krysinski-dev/" target="_blank">krzysztof-krysinski-dev</a>";
+    var stackOverflow = "<a href="https://stackoverflow.com/users/9146296/flabbet" target="_blank">flabbet</a>";
+}
+            </pre>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<div id="projects">
+    @foreach (var project in Model.Projects)
+    {
+        <div class="card" style="width: 400px; display: inline-block;">
+            <div class="project-card">
+                @project.ProjectName
+                <div class="project-card-body">
+                    @project.Description
+                    <div class="project-card-technologies">
+                        @foreach(var tech in project.Technologies)
+                        {
+                            <div class="project-card-technology" style="background-color: @tech.Color">
+                                @tech.Name
+                            </div>
+                        }
+                        <br/>
+                        <div class="project-lang">
+                            <span class="dot" style="background-color: @project.LanguageColor"></span>
+                            <span>@project.Language</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

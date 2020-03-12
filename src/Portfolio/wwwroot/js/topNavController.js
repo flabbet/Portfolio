@@ -1,5 +1,5 @@
 function toogleResponsive(){
-    var x = document.querySelector("#myTopnav");
+    let x = document.querySelector("#myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {

@@ -74,18 +74,73 @@ h1{
 }
 
 .contentBlock{
+  float:left;
+}
+
+.card{
     background-color: #383838;
-    float:left;
     font-size: 24px;
     padding: 25px;
     margin-left: 50px;
     margin-top: 15px;
     font-size: 28px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
-.contentBlock a{
-  text-decoration: underline;
-  text-decoration-color: #7de67d;
+.card a {
+    text-decoration: underline;
+    text-decoration-color: #7de67d;
+}
+
+#projects{
+    margin-top: 150px
+}
+
+.project-card{
+    font-size: 36px;
+}
+
+.project-card-body {
+    font-size: 20px;
+    color: #B5B5B5;
+    padding-top: 10px;
+}
+
+.project-card-technologies {
+    margin-top: 45px;
+}
+
+.project-card-technology {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.project-lang {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.project-lang {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#downText {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#FDD445, #F2006F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

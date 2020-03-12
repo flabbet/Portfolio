@@ -1,0 +1,42 @@
+[
+    {
+        "projectName" : "PixiEditor",
+        "lang": "C#",
+        "langColor": "#9D6ED8",
+        "description": "PixiEditor is lightweighted pixel art editor.",
+        "github": "https://github.com/flabbet/PixiEditor",
+        "technologies": 
+        [
+            {
+                "name": ".NET Core 3",
+                "color": "#189F20"
+            },
+            {
+                "name": "WPF",
+                "color": "#317CFF"
+            }       
+        ]
+    },
+    {
+        "projectName" : "SwagLyrics-Discord-Bot",
+        "lang": "Python",
+        "langColor": "#3475A9",
+        "description": "A smart lyrics Discord bot.",
+        "github": "https://github.com/SwagLyrics/SwagLyrics-discord-bot",
+        "technologies": 
+        [
+            {
+                "name": "Discord.py",
+                "color": "#7289DA"
+            },
+            {
+                "name": "Flask",
+                "color": "#FFA500"
+            },
+            {
+                "name": "SwagLyrics",
+                "color": "#00A470"
+            }    
+        ]
+    }
+]
