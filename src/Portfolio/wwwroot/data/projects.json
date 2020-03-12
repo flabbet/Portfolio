@@ -3,7 +3,7 @@
         "projectName" : "PixiEditor",
         "lang": "C#",
         "langColor": "#9D6ED8",
-        "description": "PixiEditor is lightweighted pixel art editor.",
+        "description": "Lightweighted pixel art editor.",
         "github": "https://github.com/flabbet/PixiEditor",
         "technologies": 
         [
@@ -14,7 +14,43 @@
             {
                 "name": "WPF",
                 "color": "#317CFF"
-            }       
+            } 
+        ]
+    },
+    {
+        "projectName" : "Emergency Resources",
+        "lang": "C#",
+        "langColor": "#9D6ED8",
+        "description": "A life-saving Rimworld mod.",
+        "github": "https://github.com/flabbet/-Rimworld-Mod-Emergency-Resources",
+        "technologies": 
+        [
+            {
+                "name": "Rimworld",
+                "color": "#717171"
+            }   
+        ]
+    },
+    {
+        "projectName" : "This website",
+        "lang": "C#",
+        "langColor": "#9D6ED8",
+        "description": "My personal website.",
+        "github": "https://github.com/flabbet/Portfolio",
+        "technologies": 
+        [
+            {
+                "name": "ASP.NET",
+                "color": "#0078D7"
+            },
+            {
+                "name": ".NET Core 3",
+                "color": "#189F20"
+            },
+            {
+                "name": "HTML/CSS/JS",
+                "color": "#D83B01"
+            }
         ]
     },
     {
@@ -36,6 +72,51 @@
             {
                 "name": "SwagLyrics",
                 "color": "#00A470"
+            }    
+        ]
+    },
+    {
+        "projectName" : "PCForLife.pl",
+        "lang": "JavaScript",
+        "langColor": "#F7E018",
+        "description": "Website made for PCForLife.",
+        "github": "http://pcforlife.pl/",
+        "technologies": 
+        [
+            {
+                "name": "JavaScript",
+                "color": "#F7E018",
+                "fontColor": "#000"
+            },
+            {
+                "name": "HTML",
+                "color": "#D83B01"
+            },
+            {
+                "name": "CSS",
+                "color": "#1B84C2"
+            }    
+        ]
+    },
+    {
+        "projectName" : "Who is Who",
+        "lang": "Dart",
+        "langColor": "#00B4AB",
+        "description": "A simple flashcards based learning game.",
+        "github": "https://github.com/flabbet/WhoIsWho-Game",
+        "technologies": 
+        [
+            {
+                "name": "Flutter",
+                "color": "#52C0F1"
+            },
+            {
+                "name": "Firebase",
+                "color": "#F5820C"
+            },
+            {
+                "name": "Google APIs",
+                "color": "#2A9D49"
             }    
         ]
     }

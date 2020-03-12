@@ -19,7 +19,7 @@
         I love books, music and archery.
     </div>
     <div id="downText">
-        <span>Projects</br></span>
+        <span>Projects</br>	&darr;</span>
     </div>
 </div>
 <div class="contentBlock">
@@ -44,17 +44,20 @@ class Portfolio
     {
         <div class="card" style="width: 400px; display: inline-block;">
             <div class="project-card">
-                @project.ProjectName
+                <a href="@project.GithubUrl" target="_blank">
+                    @project.ProjectName
+                </a>
+
                 <div class="project-card-body">
                     @project.Description
                     <div class="project-card-technologies">
-                        @foreach(var tech in project.Technologies)
+                        @foreach (var tech in project.Technologies)
                         {
-                            <div class="project-card-technology" style="background-color: @tech.Color">
+                            <div class="project-card-technology" style="color: @tech.FontColor; background-color: @tech.Color">
                                 @tech.Name
                             </div>
                         }
-                        <br/>
+                        <br />
                         <div class="project-lang">
                             <span class="dot" style="background-color: @project.LanguageColor"></span>
                             <span>@project.Language</span>

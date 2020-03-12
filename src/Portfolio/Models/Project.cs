@@ -26,5 +26,6 @@ namespace Portfolio.Models
     {
         public string Name { get; set; }
         public string Color { get; set; }
+        public string FontColor { get; set; } = "#fff";
     }
 }
