@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     height: 100%;
@@ -12,7 +16,7 @@ a{
 }
 
 .topnav{
-    background-color: #545454;
+    background-color: #252525;
     overflow: hidden;
 }
 
@@ -55,11 +59,12 @@ color: snow;
     }
 }
 
-.container{
+#aboutMe{
     padding: 50px;
 }
 
-h1{
+h1 {
+    padding: 50px;
     font-size: 72px;
 }
 
@@ -95,6 +100,7 @@ h1{
 #projects{
     margin-top: 150px;
     text-align: center;
+    background-color: #222;
 }
 
 #projects .card{
@@ -138,9 +144,15 @@ h1{
     display: inline-block;
 }
 
-.project-link{
+.project-link {
     float: right;
+    transition: all .2s ease-in-out;
+    margin-top: 5px;
 }
+
+    .project-link:hover {
+        transform: scale(1.15);
+    }
 
 .project-link img {
     width: 32px;
@@ -154,11 +166,10 @@ h1{
 }
 
 #downText {
-    text-align: left;
     font-size: 72px;
-    margin-bottom: 50px;
-    margin-left: 200px;
-    background: -webkit-linear-gradient(#FDD445, #F2006F);
+    padding-bottom: 75px;
+    padding-top: 75px;
+    background: #FFA500;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
