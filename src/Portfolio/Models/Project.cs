@@ -15,8 +15,9 @@ namespace Portfolio.Models
         public string Language { get; set; }
         [JsonPropertyName("langColor")]
         public string LanguageColor { get; set; }
-        [JsonPropertyName("github")]
-        public string GithubUrl { get; set; }
+        [JsonPropertyName("link")]
+        public string ProjectUrl { get; set; }
+        public string Image { get; set; } = "GitHub-Mark.png";
         public Technology[] Technologies { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize(this);

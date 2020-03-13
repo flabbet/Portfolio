@@ -8,18 +8,15 @@
     <span style="color: #00FF2A">></span><span id="typeWriteHeader"> Hi, I'm Krzysztof</span><span class="blink">|</span>
 </h1>
 <div class="contentBlock">
-    <div class="card">
-        I've been programming since I was 13. </br></br>
+    <div class="card" style="background-color: transparent; line-height: 60px; font-weight: lighter;">
+        I've been programming since I was 13. <br/><br/>
         My main fields are <span style="color: #A1E727;">desktop</span>, <span style="color: #A1E727;">game</span>
-        and <span style="color: #A1E727;">mobile</span> development. </br></br>
+        and <span style="color: #A1E727;">mobile</span> development. <br/><br/>
         I am <span style="color: #A1E727;">Google Code-In</span> <span style="color: #A1E727;">2018</span>
         finalist,
-        <span style="color: #A1E727;">Google Code-In</span> 2019 Runner up</br>
-        and winner of few local contests.</br></br>
+        <span style="color: #A1E727;">Google Code-In</span> 2019 Runner up<br/>
+        and winner of few local contests.<br/><br/>
         I love books, music and archery.
-    </div>
-    <div id="downText">
-        <span>Projects</br>	&darr;</span>
     </div>
 </div>
 <div class="contentBlock">
@@ -40,11 +37,14 @@ class Portfolio
 </div>
 <div style="clear:both;"></div>
 <div id="projects">
+    <div id="downText">
+        <span>Projects</span>
+    </div>
     @foreach (var project in Model.Projects)
     {
         <div class="card" style="width: 400px; display: inline-block;">
             <div class="project-card">
-                <a href="@project.GithubUrl" target="_blank">
+                <a href="@project.ProjectUrl" target="_blank">
                     @project.ProjectName
                 </a>
 
@@ -62,6 +62,11 @@ class Portfolio
                             <span class="dot" style="background-color: @project.LanguageColor"></span>
                             <span>@project.Language</span>
                         </div>
+                        <a href="@project.ProjectUrl" target="_blank">
+                            <div class="project-link">
+                                <img src="~/images/@project.Image" />
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
