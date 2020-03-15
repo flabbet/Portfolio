@@ -5,6 +5,7 @@
         "langColor": "#9D6ED8",
         "description": "Lightweighted pixel art editor.",
         "link": "https://github.com/flabbet/PixiEditor",
+        "videoUrl": "",
         "technologies": 
         [
             {
@@ -23,6 +24,7 @@
         "langColor": "#9D6ED8",
         "description": "A life-saving Rimworld mod.",
         "link": "https://github.com/flabbet/-Rimworld-Mod-Emergency-Resources",
+        "videoUrl": "",
         "technologies": 
         [
             {
@@ -37,6 +39,7 @@
         "langColor": "#9D6ED8",
         "description": "My personal website.",
         "link": "https://github.com/flabbet/Portfolio",
+        "videoUrl": "",
         "technologies": 
         [
             {
@@ -59,6 +62,7 @@
         "langColor": "#3475A9",
         "description": "A smart lyrics Discord bot.",
         "link": "https://github.com/SwagLyrics/SwagLyrics-discord-bot",
+        "videoUrl": "",
         "technologies": 
         [
             {
@@ -82,6 +86,7 @@
         "description": "Website made for PCForLife.",
         "link": "http://pcforlife.pl/",
         "image": "web-icon.png",
+        "videoUrl": "",
         "technologies": 
         [
             {
@@ -105,6 +110,7 @@
         "langColor": "#00B4AB",
         "description": "A simple flashcards based learning game.",
         "link": "https://github.com/flabbet/WhoIsWho-Game",
+        "videoUrl": "",
         "technologies": 
         [
             {

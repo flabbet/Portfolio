@@ -17,6 +17,7 @@ namespace Portfolio.Models
         public string LanguageColor { get; set; }
         [JsonPropertyName("link")]
         public string ProjectUrl { get; set; }
+        public string VideoUrl { get; set; }
         public string Image { get; set; } = "GitHub-Mark.png";
         public Technology[] Technologies { get; set; }
 

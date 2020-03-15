@@ -5,7 +5,7 @@
 }
 
     <div id="overlay" onclick="disablePlayer();">
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/nsVD8VPh96w?mute=1" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            <iframe width="800" height="450" src="" frameborder="0" allow="autoplay; fullscreen"></iframe>
         </div>
 <div id="aboutMe">
     <h1>
@@ -48,13 +48,16 @@ class Portfolio
     @foreach (var project in Model.Projects)
     {
         <div class="card" style="width: 400px; display: inline-block;">
-            <div class="project-card" onclick="enablePlayer();">
+            <div class="project-card">
                 <a href="@project.ProjectUrl" target="_blank">
                     @project.ProjectName
                 </a>
 
                 <div class="project-card-body">
                     @project.Description
+                    <div class="project-preview">
+                        <video src="~/videos/PixiEditor.mp4" width="300" height="200" onclick="this.paused?this.play():this.pause()" ondblclick="this.requestFullscreen()"/>
+                    </div>
                     <div class="project-card-technologies">
                         @foreach (var tech in project.Technologies)
                         {
@@ -75,6 +78,7 @@ class Portfolio
                     </div>
                 </div>
             </div>
+            
         </div>
     }
 </div>
