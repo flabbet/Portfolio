@@ -16,8 +16,10 @@
                 and <span style="color: #A1E727;">mobile</span> development. <br /><br />
                 I am <span style="color: #A1E727;">Google Code-In</span> <span style="color: #A1E727;">2018</span>
                 finalist,
-                <span style="color: #A1E727;">Google Code-In 2019</span> Runner up<br />
+                <span style="color: #A1E727;">Google Code-In 2019</span> Runner up<br /><br />
                 and winner of few local contests.<br /><br />
+                I mostly work in <span class="underlinedText" style="border-color: #9D6ED8;">C#</span> and 
+                <span class="underlinedText" style="border-color: #189F20;">.NET</span> technologies.<br /><br />
                 I love books, music and archery.
             </div>
         </div>
@@ -55,7 +57,9 @@
     </div>
     @foreach (var project in Model.Projects)
     {
-        <div class="card" style="width: 400px; display: inline-block;">
+        <div class="card" style="        width: 400px;
+        display: inline-block;
+">
             <div class="project-card" onclick="enablePlayer();">
                 <a href="@project.ProjectUrl" target="_blank">
                     @project.ProjectName
