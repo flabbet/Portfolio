@@ -91,14 +91,26 @@ h1 {
     justify-content: center;
 }
 
+@media screen and (max-width: 870px) {
+   #aboutMe{
+       display: inline-block;
+   }
+}
+
 .card {
     background-color: #383838;
     font-size: 24px;
     padding: 25px;
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 15px;
     font-size: 28px;
     border-radius: 5px;
+}
+
+.withWidth {
+    width: 400px;
+    display: inline-block;
 }
 
     .card a {
@@ -255,6 +267,31 @@ h1 {
     padding-bottom: 75px;
     padding-top: 75px;
     color: #ffa500;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .card {
+        width: 300px;
+    }
+
+    .project-card {
+        font-size: 30px;
+    }
+
+    .project-card-body {
+        font-size: 16px;
+    }
+
+    .dot{
+        width: 15px;
+        height: 15px;
+    }
 }
 
 #moreInfo{
