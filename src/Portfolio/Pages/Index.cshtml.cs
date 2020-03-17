@@ -15,7 +15,16 @@ namespace Portfolio.Pages
         private readonly ILogger<IndexModel> _logger;
         public JsonFileProjectService ProjectService;
         public IEnumerable<Project> Projects { get; private set; }
-
+        public int Age
+        {
+            get
+            {
+                int now = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
+                int dob = int.Parse(new DateTime(2003, 3, 24).ToString("yyyyMMdd"));
+                int age = (now - dob) / 10000;
+                return age;
+            }
+        }
         public IndexModel(ILogger<IndexModel> logger, JsonFileProjectService projectService)
         {
             _logger = logger;

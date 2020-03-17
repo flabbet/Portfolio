@@ -134,6 +134,17 @@ h1 {
     text-align: left;
 }
 
+#me {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow:hidden;
+}
+
+    #me img {
+        width: 250px;
+    }
+
 
 #links {
     margin-top: 50px;
